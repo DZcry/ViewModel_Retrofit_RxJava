@@ -35,4 +35,5 @@ public class HttpConfig {
 
     public static final String HTTP_REQUEST_NEWS = "news";
 
+    public static final String BASE_URL = "https://test.jsq.app.dingdingyisheng.mobi/api/";
 }

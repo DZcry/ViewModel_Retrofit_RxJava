@@ -5,6 +5,7 @@ import leavesc.hello.network.http.basis.config.HttpConfig;
 import leavesc.hello.network.http.basis.model.BaseResponseBody;
 import leavesc.hello.network.model.NewsPack;
 import leavesc.hello.network.model.QrCode;
+import leavesc.hello.network.model.Test;
 import leavesc.hello.network.model.Weather;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
@@ -36,5 +37,8 @@ public interface ApiService {
 
     @GET("leavesC/test2")
     Observable<BaseResponseBody<String>> test2();
+
+    @GET("v1/planCommon/h5-plan-info")
+    Observable<BaseResponseBody<Test>> test3(@Query("systemId") String systemId);
 
 }

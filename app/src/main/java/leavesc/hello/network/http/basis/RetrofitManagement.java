@@ -1,5 +1,7 @@
 package leavesc.hello.network.http.basis;
 
+import android.support.annotation.NonNull;
+
 import com.readystatesoftware.chuck.ChuckInterceptor;
 
 import java.util.Map;
@@ -108,7 +110,7 @@ public class RetrofitManagement {
     private <T> Observable<T> createData(T t) {
         return Observable.create(new ObservableOnSubscribe<T>() {
             @Override
-            public void subscribe(ObservableEmitter<T> emitter) {
+            public void subscribe(@NonNull ObservableEmitter<T> emitter) {
                 try {
                     emitter.onNext(t);
                     emitter.onComplete();

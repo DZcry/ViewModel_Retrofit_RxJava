@@ -30,4 +30,10 @@
         android:onClick="failExample"
         android:text="请求失示例" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="testExample"
+        android:text="测试示例" />
+
 </LinearLayout>

@@ -43,5 +43,7 @@ public class MainActivity extends BaseActivity {
     public void failExample(View view) {
         startActivity(FailExampleActivity.class);
     }
+    
+    public void testExample(View view) {startActivity(TestlExampleActivity.class);}
 
 }

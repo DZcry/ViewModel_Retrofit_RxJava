@@ -28,6 +28,7 @@
         <activity android:name=".QrCodeActivity" />
         <activity android:name=".QueryNewsActivity" />
         <activity android:name=".FailExampleActivity" />
+        <activity android:name=".TestlExampleActivity" />
     </application>
 
 </manifest>
